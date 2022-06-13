@@ -1,7 +1,22 @@
 # reproduction-route-params-is-not-tracked
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This Ember application demonstrates that `Route.paramsFor()` is not autotracked.
+
+It uses `trackedFunction` from `ember-resources` in `app/routes/post.js`.
+The tracked function consumes a param of the route (`:post_id`) using
+`Routes.paramsFor()`. It logs the ID to console when ever it runs.
+
+I would expect that the tracked function reruns whenever the route param
+changes. But it does not. It only runs once.
+
+As `model` hook reruns every time a work-around is assigning the route param
+to a tracked property in `model` hook and consuming that one in the tracked
+function. While this works, it is way less ergonomic.
+
+Please note that using `RouteService.currentRoute.params` would be an
+alternative pattern. While this would be great for use cases within a
+controller or component, it has noticeable trade-off that
+`RouterService.currentRoute` is updated _after_ `model` hook run.
 
 ## Prerequisites
 
