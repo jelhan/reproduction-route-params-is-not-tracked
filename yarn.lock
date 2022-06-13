@@ -942,7 +942,7 @@
   dependencies:
     regenerator-runtime "^0.13.4"
 
-"@babel/runtime@^7.14.0", "@babel/runtime@^7.8.4":
+"@babel/runtime@^7.14.0", "@babel/runtime@^7.17.8", "@babel/runtime@^7.8.4":
   version "7.18.3"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.18.3.tgz#c7b654b57f6f63cf7f8b418ac9ca04408c4579f4"
   integrity sha512-38Y8f7YUhce/K7RMwTp7m0uCumpv9hZkitCbBClqQIow1qSbCvGkcegKOXpEWCQLfWmevgRiWokZ1GkpfhbZug==
@@ -1170,7 +1170,7 @@
     ember-cli-version-checker "^5.1.2"
     semver "^7.3.5"
 
-"@embroider/addon-shim@^1.5.0":
+"@embroider/addon-shim@^1.2.0", "@embroider/addon-shim@^1.5.0":
   version "1.8.0"
   resolved "https://registry.yarnpkg.com/@embroider/addon-shim/-/addon-shim-1.8.0.tgz#a545d85991f033a7bac147fe720ff2a7a870731f"
   integrity sha512-iMD9Yzx24WY0/K42if2piWzkw+BFCpqxwbPaNWFqlTbNGzzd1UnNiFhtdjXT5vTyYSQRgbQwuFcr/04Rh8qF8A==
@@ -1178,7 +1178,7 @@
     "@embroider/shared-internals" "^1.8.0"
     semver "^7.3.5"
 
-"@embroider/macros@1.8.0", "@embroider/macros@^1.0.0", "@embroider/macros@^1.6.0":
+"@embroider/macros@1.8.0", "@embroider/macros@^1.0.0", "@embroider/macros@^1.2.0", "@embroider/macros@^1.6.0":
   version "1.8.0"
   resolved "https://registry.yarnpkg.com/@embroider/macros/-/macros-1.8.0.tgz#9e947e6292f0d7768a0f743d883c3e794457eaec"
   integrity sha512-jeRoUMPbZ/ADBU0FsyBGS1UgV5vQmwIPnpbVUsJ0XcZFZq/8ZHV6Ts4yeubvH/lePnUpHaKogs4dDvGk5tpQKw==
@@ -4865,6 +4865,15 @@ ember-resolver@^8.0.3:
     ember-cli-babel "^7.26.6"
     ember-cli-version-checker "^5.1.2"
     resolve "^1.20.0"
+
+ember-resources@^4.9.0:
+  version "4.9.0"
+  resolved "https://registry.yarnpkg.com/ember-resources/-/ember-resources-4.9.0.tgz#477c11f6656cdafb06f1f3ea4b6720fc7cc3bd1c"
+  integrity sha512-pmHK44RMo+DEqmhAYXL1zjqSVzYxl4SlKvggwumpbcWUYrk2s2+AIHJUKSPcIh0L/7GEpvKzn15Tn8IBO13wGQ==
+  dependencies:
+    "@babel/runtime" "^7.17.8"
+    "@embroider/addon-shim" "^1.2.0"
+    "@embroider/macros" "^1.2.0"
 
 ember-rfc176-data@^0.3.15, ember-rfc176-data@^0.3.17:
   version "0.3.17"

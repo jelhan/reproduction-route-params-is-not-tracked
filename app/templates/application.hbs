@@ -1,7 +1,6 @@
 {{page-title "ReproductionRouteParamsIsNotTracked"}}
 
-{{!-- The following component displays Ember's default welcome message. --}}
-<WelcomePage />
-{{!-- Feel free to remove this! --}}
+<LinkTo @route="post" @model="foo">Go to post "foo"</LinkTo>
+<LinkTo @route="post" @model="bar">Go to post "bar"</LinkTo>
 
 {{outlet}}
